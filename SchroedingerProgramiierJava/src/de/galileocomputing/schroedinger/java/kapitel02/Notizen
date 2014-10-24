@@ -1,0 +1,49 @@
+VARIABLEN UND DATENTYPEN
+
+- Programme möchten irgendwas machen: Daten gebraucht.
+	um Daten zu speichern braucht man VARIABLEN.
+	Daten Art zu festlegen: braucht man DATENTYPEN
+	
+- Java ist "statisch typisierte Programmiersprache" : jede Variable hat einen festen Typ und dieses Typ ist bereits zur Übersetzungszeit bekannt.
+
+- Variablen-Deklaration: Datentyp Variablenname = Wert;
+	 Wert hängt von dem jeweiligen Datentpy ab.
+	 Variablen können nicht beliebige Name haben : manche Name ist für Bestandteil der Sprache Jave reserviert.
+	 Wert muss nicht immer direkt eingeben. Je nach Datentyp bekommt Variable einen Standardwert.
+	 Variablennamen: Zahlen (nicht beginn), Zeichen und "$", "_"
+
+- Es gibt primitive Datentypen und Referenzdatentypen.
+	- Primitive Datentypen (oder elementare Datentypen oder Basisdatentypen): Zahlen, Zeichen und Wahrheitswerte
+
+	- Zahlen: byte (8-Bit), short (16-Bit), int (32-Bit), long (64-Bit), float (32-Bit), double (64-Bit)
+		+ Deklaration von long oder float: L oder F am ende anhängen, z.B: long l = 234343443L, float f = 2.00F
+					double ist Standart-Datentyp für Fließkommazahl aber mann kann auch optional ein D anhängen
+		+ Ab Java 7 ist es möglich "_" benuzten um die Lesbarkeit der Zahlen zu verbessern, z.B: 2342_2342_3434_3194L
+		+ Bevor L oder F oder D darf "_" niemals stehen.
+		+ Binär, Okta, Dezimal, Hexadezimal kann mann auch ab Java 7 einfach deklariren mit 0B..., 0..., ..., und 0X...
+		+ OPERATIONEN VON ZAHLEN: 	+, -, *, /, % (Modulo:ergibt den Rest von Dividiren, z.B: 5%4=1)
+									/ und * bei double und float: müssen Punkten oder ein D hinter der Zahlen, so bekommt man richte Ergebnis als Fließkommazahl (z.B: 10./3. oder 10D/3D = 3.33333333"5" sonst nur =3.0)
+									die "5" steht ganz am Ende =>> auch nicht ganz genau berechnet
+									GENAU BERECHNET : mit der Klasse: BigDecimal
+									z.B BigDecimal zehn = new BigDecimal("10");
+										BigDecimal drei = new BigDecimal("3");
+										BigDecimal ergebnis = zehn.divide(drei, 16, RoundingMode.HALF_UP); 
+										BigDecimal ist eine Klasse => 10 und 3 muss als Variablen neu definiert werden
+										16: Anzahl der Nachkommastellen			
+										!!!Praameter von BigDecimal ist ein String, also eine Zeichenkette, nicht eine Zahl => in Anführungszeichen schreiben ("3" oder "10").
+									KURZFORM VON OPERATIONEN: 	+= , -=, *=, /= und %=.
+																z.B: int zahl = zahl + 4; = int zahl += 4;	
+									KÜZERE FORM:				-- (Dekrement-Operator), ++ (Inkrement-Operator)
+																Präfix-Schreibweise: ++zahl
+																Postfix-Schreibweise: zahl++
+																z.B:	int zahl = 5;
+																		Syso(zahl++); //5 auf die Konsole schreiben und dann erhört zahl zu 6.
+																		Syso(++zahl); //erhört zahl von 6 zu 7 und dann 7 auf der Konsole ausgeben. 											
+- Java Code Convention	
+	CamenCase-Schreibweise: wie ein Camen aussieht: 
+	Variablen: lowerCamenCase : aaaBbbCcc...
+	Klasse: upperCamenCase
+	Pakkage: lowercase
+	Konstant: UPPERCASE
+	alle anderen: lowercase
+

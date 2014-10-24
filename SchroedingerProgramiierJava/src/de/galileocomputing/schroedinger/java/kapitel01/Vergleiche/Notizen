@@ -1,0 +1,23 @@
+- Java-Programme: Plattformunabhängig, laufen innerhalb einer virtuellen Maschine: JVM.
+- Zum Entwickeln: JDK.
+
+- per Hand komilieren: javac zum Komilieren und java zum Laufenlassen.
+ 
+- Startparameter: 
+	über String[] args.
+	z.B: Syso("Hallo " + args[0]);
+	args: ein Array von Strings.
+
+	Startparameter von Hand:
+	z.B: java de....kapitel01.vergleiche.Halloschroedinger Schrödinger
+	Mit Eclipse:
+	in Arguments von Run Configurations eingeben.
+
+	args = Schrödinger Duc Linh => 0 = Schrödinger, 1 = Duc, 2 = Linh
+	
+- eins aus geben von Daten: System.out, System.in, System.err.
+	System.err : Fehlermeldung zum selbst Notizen, wenn es Fehler gibt.
+
+- Tipps: zum schnellen Eintippen: Anfangbuchstaben  Strg + Leerzeichen.
+	Syso Strg + Leerzeichen = System.out.println();
+	
